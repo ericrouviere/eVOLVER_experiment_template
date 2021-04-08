@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
 
-#hi
-
 import os
 import sys
 import time
