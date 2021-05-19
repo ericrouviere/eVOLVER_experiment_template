@@ -17,6 +17,7 @@ EVOLVER_PORT = 8081
 
 ##### Identify pump calibration files, define initial values for temperature, stirring, volume, power settings
 
+
 TEMP_INITIAL = [30] * 16 #degrees C, makes 16-value list
 #Alternatively enter 16-value list to set different values
 #TEMP_INITIAL = [30,30,30,30,32,32,32,32,34,34,34,34,36,36,36,36]
@@ -55,7 +56,7 @@ def turbidostat(eVOLVER, input_data, vials, elapsed_time):
     ##### Turbidostat Settings #####
     #Tunable settings for overflow protection, pump scheduling etc. Unlikely to change between expts
 
-    time_out = 5 #(sec) additional amount of time to run efflux pump
+    time_out = 10 #(sec) additional amount of time to run efflux pump
     pump_wait = 3 # (min) minimum amount of time to wait between pump events
 
     ##### End of Turbidostat Settings #####
